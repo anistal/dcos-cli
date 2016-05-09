@@ -1,0 +1,24 @@
+Description:
+    Manage Paas Consul nodes
+
+Usage:
+    dcos consul status leader
+    dcos consul status peers
+    dcos consul keyvalue get <key>
+    dcos consul keyvalue set <key> <value>
+
+Commands:
+    status leader
+        returns the current raft leader
+    status peers
+        returns the current peer set
+    keyvalue get
+        get the value of <key>
+    keyvalue set
+        set the <value> of <key>
+
+Options:
+    -h, --help
+        Print usage.
+    --version
+        Print version information.

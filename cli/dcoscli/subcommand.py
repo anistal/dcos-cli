@@ -19,6 +19,7 @@ def _default_modules():
     from dcoscli.package import main as package_main
     from dcoscli.service import main as service_main
     from dcoscli.task import main as task_main
+    from dcoscli.consul import main as task_consul
 
     return {'auth': auth_main,
             'config': config_main,
@@ -27,7 +28,8 @@ def _default_modules():
             'node': node_main,
             'package': package_main,
             'service': service_main,
-            'task': task_main
+            'task': task_main,
+            'consul': task_consul
             }
 
 
